@@ -19,27 +19,33 @@ working();
   double returndouble=deci();
   System.out.println(returndouble);
 }
- static void  speaking ()
+ 
+
+static void  speaking ()
  {
  System.out.println("dog is speaking");
  }
 
-	 static void work()
-	 {
+	
+
+
+    static void working()
+ 	 {
 		 System.out.println(" sam is working properly");
 	 }
  
  
  
- static int marks()
+      static int marks()
  {
-	 int a=10;
-	 int b=20;
-	 int c=a+b;
+	 int x=10;
+	 int y=20;
+	 int z=a+b;
 	 return c;
 	
 	 
  }
+
  static short sub()
  {
 	 short a=157;
@@ -49,7 +55,10 @@ working();
 	 
  }
 
- static  boolean  example()
+
+
+
+      static  boolean  example()
  {
 	 boolean a=true;
 	 return true;
@@ -60,18 +69,29 @@ working();
   return e;
   
   }  
+
+
+
   
-  static float decimal()
+        static float decimal()
   {
 	  float value=5.6f;
 	  return value;
   }
 
-  static long num()
+
+
+
+    static long num()
   {
 	  long no=12000;
 	  return no;
   }
+
+
+
+
+
 static byte index()
 {
 	byte i=9;
