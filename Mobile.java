@@ -1,63 +1,59 @@
 
 
 public class Mobile {
-    
-	String Name;
-    int ImeiNumbaer;
-    int CameraMagnifier;
-    float BatterHealth;
 
-    Mobile(String Name,  int ImeiNumbaer, int CameraMagnifier, float BatterHealth) {
-        this.Name = Name;
-    	this.ImeiNumbaer = ImeiNumbaer;
-        this.CameraMagnifier = CameraMagnifier;
-        this.BatterHealth = BatterHealth;
-    }
+	    enum MobileType {
+	        ANDROID, IOS, WINDOWS
+	    }
 
-    Mobile (String Name,int ImeiNumbaer, int CameraMagnifier) {
-        this(Name,ImeiNumbaer, CameraMagnifier, 0.0f);
-    }
+	    private String name;
+	    private MobileType type;
+	    private int price;
+	    private char grade;
 
-    Mobile(String Name, int ImeiNumbaer  ) {
-        this(Name,ImeiNumbaer, 0); 
-    }
-    Mobile(String Name)
-    {
-    	this(Name,0);
-    }
+	    public Mobile(String name, MobileType type, int price, char grade) {
+	        this.name = name;
+	        this.type = type;
+	        this.price = price;
+	        this.grade = grade;
+	    }
 
-    public static void main(String[] args) {
-        
-    	Mobile mb = new Mobile("One plue Node2", 1234, 50, 100f);
-        if (mb != null) {
-        	System.out.println("Moblie Name  "+mb.Name);
-            System.out.println("IMEI Numbaer is "+mb.ImeiNumbaer);
-            System.out.println("Magnifier "+mb.CameraMagnifier+"px");
-            System.out.println("Batter Health "+mb.BatterHealth+"%mh");
-        }
-        
-        
-        System.out.println();
-        
-        if(mb !=null) {
-        Mobile mb1 = new Mobile("sumsung S9",43123, 43,99.7f);
-          System.out.println("Moblie Name  "+mb1.Name); 
-          System.out.println("IMEI Numbaer is "+mb1.ImeiNumbaer);
-          System.out.println("Magnifier "+mb1.CameraMagnifier);
-          System.out.println("Batter Health "+mb1.BatterHealth+"%");
-          
-         
-          System.out.println();
-          
-          if(mb !=null) {
-              Mobile mb2 = new Mobile("Iphone 15 pro",43123, 43,99);
-                System.out.println("Moblie Name  "+mb2.Name);
-                System.out.println("IMEI Numbaer is"+mb2.ImeiNumbaer);
-                System.out.println("Magnifier "+mb2.CameraMagnifier);
-                
-                
-               }
-          }
-    
-      }
-}
+	    public String getName() {
+	        return name;
+	    }
+
+	    public MobileType getType() {
+	        return type;
+	    }
+
+	    public int getPrice() {
+	        return price;
+	    }
+
+	    public char getGrade() {
+	        return grade;
+	    }
+
+	    public static boolean compareMobileType(Mobile.MobileType first, Mobile.MobileType second) {
+	        return first.equals(second);
+	    }
+
+	    public static boolean compareMobilePrice(Mobile first, Mobile second) {
+	        return first.getPrice() == second.getPrice();
+	    }
+
+	    public static boolean compareMobileGrade(Mobile first, Mobile second) {
+	        return first.getGrade() == second.getGrade();
+	    }
+
+	    public static void main(String[] args) {
+	        Mobile mobile1 = new Mobile("Samsung", MobileType.ANDROID, 500, 'A');
+	        Mobile mobile2 = new Mobile("iPhone", MobileType.IOS, 1000, 'A');
+
+	        System.out.println(compareMobileType(mobile1.getType(), mobile2.getType()));
+	        System.out.println(compareMobilePrice(mobile1, mobile2));
+	        System.out.println(compareMobileGrade(mobile1, mobile2));
+	    }
+	}
+
+
