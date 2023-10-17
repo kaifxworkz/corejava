@@ -66,3 +66,30 @@ public class Computer {
         return brandName;
     }
 }
+
+
+
+
+
+// ComputerStarter.java
+public class ComputerStarter {
+    public static void main(String[] args) {
+        // Creating 4 objects
+        String[] additionalFeatures = {"Feature1", "Feature2", "Feature3", "Feature4", "Feature5"};
+        Computer computer1 = new Computer("Dell", "17 inches", "2560x1440", "Dell Inc.", "Model456", additionalFeatures, "LED");
+        Computer computer2 = new Computer("HP", "13 inches", "1920x1080", "HP Inc.", "Model789", additionalFeatures, "LCD");
+        Computer computer3 = new Computer("Acer", "20 inches", "3840x2160", "Acer Inc.", "Model101", additionalFeatures, "CRT");
+        Computer computer4 = new Computer("Lenovo", "15 inches", "1920x1080", "Lenovo Group", "Model111", additionalFeatures, "LED");
+
+        // Accessing methods
+        computer1.printAllMethod();
+        computer2.printValuesOfArray();
+        System.out.println(computer3.getComputerName());
+        computer4.printAllMethod();
+    }
+}
+
+
+
+
+
