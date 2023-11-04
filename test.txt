@@ -1,0 +1,167 @@
+1)Java is oop programming language  Abstraction is a process of hiding the implementation 
+	details and showing only functionality to the use.Java was released to the public in 1995 and has since undergone several 	updates and revisions.
+	  
+	  functions
+        1.platform independent language
+        2.java is Secure
+	3.Secure
+
+   
+
+
+2)JDK,JRE,JVM
+
+    JDK =  java developer kit in is basically it is kit in this kit all the java file are there like JRE
+    JRE =  Java Runtime Environment   -  includes a set of tools for compiling, debugging, and running Java code.
+    JVM =  java viral Manchin - It is a crucial part of the Java Runtime Environment JRE and is responsible for executing Java 
+	   bytecode. The JVM provides an environment that emulates a real Java processor, allowing Java applications to 
+	   be platform independent, as they can run on any system that has a compatible JVM installed. 	
+
+5)variable in java is the are 2 type is variable in this one is primary and non primary
+   
+ 	primary the 8 types      	 non-primary type
+        1} int                                  
+ 	2} Boolean                        1}String
+	3} log       			  2}Array
+	4} shot                           3}link list
+	5} duboule			  4}stack	
+	6} char                           
+        7} folat
+ 	8} --
+	
+ 
+	example - int a variable it hava 4 bytes 
+		  class sum {
+		 public statics void main(String [] arg){
+		         int a= 10;
+			 int b= 20;
+			 int c = a+b;
+			Sysout.out.println("the sum of a and b "+ c);			
+			}		
+		}	 
+  
+  
+6)what is oop language based on the principle of oop is 
+   	
+       1)inheritance
+         
+        inheritance in Java is a mechanism in which one object acquires all the state and behaviors of a parent object
+	one is giveing the state and behaviors is known as parent class
+        and is taking a is known as Chile class
+
+        type of  inheritance
+	1)Sigle level inheritance
+	2)Malti-lavel inheritance
+	3)Hierarchical Inheritance
+	4)multiple inheritance is not supported in java by using class	
+	
+   
+    	2)Polymorphism
+	 Is derived fromGreek words The word "poly" means many and "morphs" means forms.
+ 	 
+    
+    
+	3)Encapsulation 
+		Encapsulation in Java is a process of wrapping code and data together into a single unit,
+		 for example, a capsule which is mixed of several medicines    
+
+        4)Abstraction 
+	is a process of hiding the implementation details and showing only functionality to the use
+
+
+	5)class
+         In java class is blueprint
+	
+        6)object
+	  In java object means reletime entire 
+       
+	   example - car, bus, fan, cat ...ect
+
+10) java features
+ 
+       1)Object-Oriented
+	
+	 Java is an object-oriented programming language, which means it focuses on objects and classes that interact 	with one
+	 another to create applications. This paradigm encourages modular, reusable, and maintainable code
+      
+	 2)Platform Independent 
+
+	One of the most significant features of Java is its platform independence. Java programs can run on any 	system with 	the Java Virtual Machine (JVM), which interprets Java bytecode. This "write once, run anywhere" capability makes 	Java 	suitable for developing cross-platform applications
+ 
+      3)Secure
+	
+	Java puts a strong emphasis on security. It provides a secure runtime environment through its bytecode verification and 	runtime security checks. Additionally, it includes features like automatic memory management (garbage collection) that help 	prevent memory leaks and buffer overflows	
+		 
+
+  11)Java array is an object which contains elements of a similar data type. Additionally, The elements of an array are stored in a  	contiguous memory location. It is a data structure where we store similar elements. We can store only a fixed set of elements 	in a Java array. 
+	Array in Java is the first element of the array is stored at the 0th index
+	2nd element is stored on 1st index and 2st index 1 ........
+
+ 12)explain class and objects give an example 
+	1)class
+           In java class is blueprint
+           class name shall be frist latter Mast be uppercase if in class the class name logname and word frist letter should be
+	   in uppercase
+           example - class car{ //code } , class PrintTowNumbaer{ //code}
+	
+        2)object
+	  In java object means reletime entire 
+          example - car, bus, fan, cat ...ect	
+   
+ 13)what are keywords mantion 10 keyword
+   1)new 
+   2)this.
+   3)instanceof			
+   5)long
+   6)return
+   7)implements  
+   8)package
+   9)extends
+   10)package	
+
+
+14)example the constructor 	
+     
+    constructor is a block of codes similar to the method
+    2  two types of constructors
+	
+   1)Default constructor 
+   2)Parameterized constructor
+
+
+
+15)The main() method is static so that JVM can invoke it without instantiating the class
+   This also saves the unnecessary wastage of memory which would have been used by the object declared only for calling the main()                   	method by the JVM.
+
+
+16)public class ArrayLengthExample {
+    public static void main(String[] args) {
+        int[] myArray = {12, 3, 2, 45, 7, 6}; 
+
+      
+        int lengthOfArray = myArray.length;
+
+        System.out.println("Length of the array is: " + lengthOfArray);
+    }
+}
+       
+17)mathond override 
+If child class has the same method as declared in the parent class, it is known as method overriding in Java.
+
+
+ class Vehicle{  
+  void car()
+	{
+	System.out.println("Vehicle is running");}  
+	}
+  
+
+  //this class is chile of vechicle car class
+  class Bike extends Vehicle{  
+  public static void main(String args[]){  
+  
+  Bike obj = new Bike();  
+  
+  obj.run();  
+  }  
+}  
